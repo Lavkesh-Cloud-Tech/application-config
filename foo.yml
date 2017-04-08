@@ -1,0 +1,19 @@
+lavkesh:
+  application:
+    name: Spring Cloud Demo 1
+
+#Server port
+server:
+  port: ${APP_PORT}
+
+#Feign config    
+feign:
+  hystrix:
+    enabled: false
+
+#Loging config
+logging:
+  level:
+    org:
+      lavkesh: 
+        poc: DEBUG

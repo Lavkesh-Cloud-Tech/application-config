@@ -1,0 +1,13 @@
+#Zuul Proxy settings
+zuul:
+  prefix: /proxy
+  ignoredServices: "*"  
+  routes: 
+    security-service: 
+      path: /secSer/**
+      
+spring:
+  resources:
+    chain:
+      cache: false
+    static-locations: ${STATIC_RESOURCE_LOCATION}
