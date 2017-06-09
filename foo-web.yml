@@ -11,3 +11,4 @@ spring:
     chain:
       cache: false
     static-locations: ${STATIC_RESOURCE_LOCATION}
+name: lavkesh 
