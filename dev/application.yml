@@ -1,5 +1,5 @@
-common:
-  property: test
+server:
+  port: 8080
 
 eureka:
   instance:
