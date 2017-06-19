@@ -1,2 +1,16 @@
 common:
   property: test
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registry-fetch-interval-seconds: 10
+    serviceUrl:
+      defaultZone: http://${REGISTRY_USERNAME}:${REGISTRY_PASSWORD}@registry-server:8080/registry/eureka/
+
+spring:
+  rabbitmq:
+    host: rabbitmq-service
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
